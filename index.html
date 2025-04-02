@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="no">
   <head>
     <title>Home</title>
     <meta charset="UTF-8" />
@@ -8,19 +8,56 @@
       Need a visual blank slate?
       Remove all code in `styles.css`!
     -->
-    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="css/styles.css"/>
     <script type="module" src="script.js"></script>
   </head>
   <body>
-    <nav>
-      <a href="/" aria-current="page">Home</a>
-      <a href="/page2.html">Other page</a>
-    </nav>
+    <header>
+      <a href="#">
+        <img src="./images/glode-logo.webp" alt="Logo">
+      </a>
+      <nav>
+        <ul>
+          <li>
+            <a href="/" aria-current="page">
+              Home
+            </a>
+          </li>
+          <li>
+            <a href="/page2.html">
+              Annen side
+            </a>
+          </li>
+          <li>
+            <a href="./omMeg.html">
+              Om meg
+            </a>
+          </li>
+          <li>
+            <a href="./prosjekter.html">
+              Prosjekter
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </header>
     <main>
-      <h1>Home page</h1>
-      <h2>Dette er h2</h2>
-      <p>Tusen takk for i dag. Fint dag i dag</p>
-      <a href="#"></a>
+      <section>
+        <h1>
+          Home page (teg h1)
+        </h1>
+        <h2>
+          Dette er h2  hovedsiden
+        </h2>
+        <p>
+          Tusen takk for i dag. Fint dag i dag
+        </p>
+        <button>
+          <a href="#">
+            Dette er bare link
+          </a>
+        </button>
+      </section>
     </main>
   </body>
 </html>

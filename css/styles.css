@@ -9,6 +9,11 @@ body {
   background-color: white;
 }
 
+header img {
+  height: 100px;
+  width: 200px;
+}
+
 nav {
   display: flex;
   flex-wrap: wrap;
@@ -20,7 +25,11 @@ nav {
   background-color: #eee;
 }
 
-nav a {
+ul {
+  list-style: none;
+}
+
+header nav ul li a {
   display: inline-block;
   min-width: 9rem;
   padding: 0.5rem;
