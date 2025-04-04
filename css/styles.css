@@ -1,4 +1,4 @@
-* {
+/* * {
   box-sizing: border-box;
 }
 
@@ -27,6 +27,8 @@ nav {
 
 ul {
   list-style: none;
+  display: flex;
+  flex-wrap: wrap;
 }
 
 header nav ul li a {
@@ -52,4 +54,5 @@ main {
 h1 {
   font-weight: bold;
   font-size: 1.5rem;
-}
+} */
+
