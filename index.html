@@ -1,32 +1,27 @@
 <!DOCTYPE html>
 <html lang="no">
   <head>
-    <title>Home</title>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width" />
-    <!--
-      Need a visual blank slate?
-      Remove all code in `styles.css`!
-    -->
+    <title>Hjem</title>
+    <link rel="icon" type="image/x-icon" href="/images/html.webp">
+    <meta charset="UTF-8"/>
+
     <link rel="stylesheet" href="css/styles.css"/>
     <script type="module" src="script.js"></script>
   </head>
-  <body>
+  <body class="wrapper">
     <header>
-      <a href="#">
-        <img src="./images/glode-logo.webp" alt="Logo">
-      </a>
+      <span>
+        <a href="./index.html">
+          <img src="./images/glode-logo.webp" alt="Logo">
+        </a>
+      </span>
       <nav>
+        <div class="search-container">
+          <input type="text" class="search-box" placeholder="Skrive noe">
+          <button class="search-button">søk</button>
+        </div>
         <ul>
           <li>
-            <a href="/" aria-current="page">
-              Home
-            </a>
-          </li>
-          <li>
-            <a href="/page2.html">
-              Annen side
-            </a>
           </li>
           <li>
             <a href="./omMeg.html">
@@ -39,25 +34,73 @@
             </a>
           </li>
         </ul>
+
+
+        <div class="login">
+          <h2>Innlogging</h2>
+          <input type="text" placeholder="Brukernavn"><br><br>
+          <input type="password" placeholder="Passord"><br><br>
+          <button>Logg inn</button>
+        </div>
+
+        <!-- <div class="social-links">
+          <h2>SoMe-lenker</h2>
+          <a href="#">Facebook</a>
+          <a href="#">Instagram</a>
+          <a href="#">Twitter</a>
+        </div> -->
       </nav>
     </header>
+
+
     <main>
-      <section>
+      <section class="firstSection">
         <h1>
-          Home page (teg h1)
+          Velkommen til min side!
         </h1>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni dolores alias totam nihil.
+          Error quibusdam obcaecati similique voluptate. Ipsam fuga non nostrum id dignissimos quaerat suscipit quia modi enim nobis!
+        </p>
+      </section>
+      <section>
         <h2>
-          Dette er h2  hovedsiden
+          Om meg
         </h2>
         <p>
-          Tusen takk for i dag. Fint dag i dag
+          Lorem ipsum dolor sit amet consectetur adipisicing elit.
+          Modi laudantium nam quod aut facilis aspernatur, fuga odit? Iste commodi voluptate deleniti! Dolorem accusamus labore non quo magnam eum officiis sequi?
         </p>
-        <button>
-          <a href="#">
-            Dette er bare link
-          </a>
-        </button>
+      </section>
+      <section>
+        <h2>
+          Prosjekter
+        </h2>
+        <p>
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+          Commodi eveniet est quidem similique obcaecati iure esse corporis modi possimus ab perspiciatis nam excepturi sunt molestias non, praesentium tenetur accusantium et?
+        </p>
       </section>
     </main>
+    <footer>
+      <h3>
+        Laget av Maksym
+      </h3>
+
+      <div>
+        <div>
+          <h4></h4>
+          <ul>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+          </ul>
+        </div>
+        <div></div>
+        <div></div>
+      </div>
+    </footer>
   </body>
 </html>
