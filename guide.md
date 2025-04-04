@@ -7,7 +7,6 @@ HEADER
 - Navigasjon
 - SoMe lenker
 
-
 MAIN
 - Alt hovedinnhold
 - formålet med nettsiden
