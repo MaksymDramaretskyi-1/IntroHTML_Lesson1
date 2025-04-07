@@ -8,18 +8,18 @@ body {
   color: black;
   background-color: white;
 }
+
 .wrapper{
   width: 95%;
   margin: 0 auto;
 }
-
-
 
 .search-container {
   display: flex;
   align-items: center;
   justify-content: center;
 }
+
 .search-box {
   width: 300px;
   padding: 10px;
@@ -27,6 +27,7 @@ body {
   border-radius: 5px;
   outline: none;
 }
+
 .search-button {
   padding: 10px 15px;
   margin-left: 10px;
@@ -39,8 +40,6 @@ body {
 .search-button:hover {
   background-color: #0056b3;
 }
-
-
 
 header {
   display: flex;
