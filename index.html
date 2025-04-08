@@ -4,103 +4,88 @@
     <title>Hjem</title>
     <link rel="icon" type="image/x-icon" href="/images/html.webp">
     <meta charset="UTF-8"/>
-
     <link rel="stylesheet" href="css/styles.css"/>
     <script type="module" src="script.js"></script>
   </head>
-  <body class="wrapper">
-    <header>
-      <span>
-        <a href="./index.html">
-          <img src="./images/glode-logo.webp" alt="Logo">
-        </a>
+  <body>
+      <!-- Header -->
+  <header class="navbar">
+    <div class="logo"> <a href="./index.html">MD</a></div>
+    <nav class="nav-links">
+      <span class="nav-span">
+        <a href="#om-meg">Om meg</a>
+        <a href="#prosjekter">Prosjekter</a>
       </span>
-      <nav>
-        <div class="search-container">
-          <input type="text" class="search-box" placeholder="Skrive noe">
-          <button class="search-button">søk</button>
-        </div>
-        <ul>
-          <li>
-          </li>
-          <li>
-            <a href="./omMeg.html">
-              Om meg
-            </a>
-          </li>
-          <li>
-            <a href="./prosjekter.html">
-              Prosjekter
-            </a>
-          </li>
-        </ul>
+        <!-- Menu Burger Mobil -->
+    <div class="burger" id="burger">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+    </nav>
 
+    <button class="contact-button">
+      <a href="#kontakt">Kontakt</a>
+    </button>
+  </header>
 
-        <div class="login">
-          <h2>Innlogging</h2>
-          <input type="text" placeholder="Brukernavn"><br><br>
-          <input type="password" placeholder="Passord"><br><br>
-          <button>Logg inn</button>
-        </div>
-
-        <!-- <div class="social-links">
-          <h2>SoMe-lenker</h2>
-          <a href="#">Facebook</a>
-          <a href="#">Instagram</a>
-          <a href="#">Twitter</a>
-        </div> -->
-      </nav>
-    </header>
-
-
-    <main>
-      <section class="firstSection">
-        <h1>
-          Velkommen til min side!
-        </h1>
+  <!-- Main content -->
+  <main>
+    <!-- Hero Section -->
+    <section class="hero">
+      <div class="hero-text">
+        <h1>Hei! Jeg er Maksym </h1>
+        <h2>Velkommen <br> til <span class="highlight"> min portefølje.</span></h2>
         <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni dolores alias totam nihil.
-          Error quibusdam obcaecati similique voluptate. Ipsam fuga non nostrum id dignissimos quaerat suscipit quia modi enim nobis!
+          Denne siden er et resultat av min læring og praktiske øvelser på programmeringskurset fra Gløde AS. Det var et fantastisk kurs med fantastiske mennesker.
+          Jeg er stolt av å ha vært en del av det.
         </p>
-      </section>
-      <section>
-        <h2>
-          Om meg
-        </h2>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit.
-          Modi laudantium nam quod aut facilis aspernatur, fuga odit? Iste commodi voluptate deleniti! Dolorem accusamus labore non quo magnam eum officiis sequi?
-        </p>
-      </section>
-      <section>
-        <h2>
-          Prosjekter
-        </h2>
-        <p>
-          Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-          Commodi eveniet est quidem similique obcaecati iure esse corporis modi possimus ab perspiciatis nam excepturi sunt molestias non, praesentium tenetur accusantium et?
-        </p>
-      </section>
-    </main>
-    <footer>
-      <h3>
-        Laget av Maksym
-      </h3>
-
-      <div>
-        <div>
-          <h4></h4>
-          <ul>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-          </ul>
-        </div>
-        <div></div>
-        <div></div>
+        <a href="#kontakt" class="primary-btn">Kontakt meg</a>
       </div>
-    </footer>
+
+      <div class="block-img-main-page"><img src="./images/TEST1.png" alt="">
+      </div>
+    </section>
+
+
+
+
+
+
+
+
+
+
+    <!-- Om meg -->
+    <section id="om-meg" class="section">
+      <h2>Om meg</h2>
+      <p>Jeg er en frontend-utvikler med lidenskap for design og brukervennlige løsninger. Jeg liker å jobbe med HTML, CSS og JavaScript.</p>
+    </section>
+
+    <!-- Prosjekter -->
+    <section id="prosjekter" class="section">
+      <h2>Prosjekter</h2>
+      <article class="project-card">
+        <h3>Prosjekt 1</h3>
+        <p>Beskrivelse av prosjektet. Kommer snart!</p>
+      </article>
+      <article class="project-card">
+        <h3>Prosjekt 2</h3>
+        <p>Beskrivelse av prosjektet. Kommer snart!</p>
+      </article>
+    </section>
+
+    <!-- Kontakt -->
+    <section id="kontakt" class="section">
+      <h2>Kontakt</h2>
+      <p>Ta gjerne kontakt via e-post: <a href="mailto:maksym.glodedata@gmail.com">maksym.glodedata@gmail.com</a></p>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <p>© 2025 Maksym Dramaretskyi. Designet med kjærlighet 💜</p>
+    <p><a href="https://github.com/MaksymDramaretskyi-1" target="_blank">Min GitHub</a></p>
+  </footer>
   </body>
 </html>
