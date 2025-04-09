@@ -1,0 +1,14 @@
+/* Footer */
+.footer {
+    background: #2e2e2e;
+    color: white;
+    text-align: center;
+    padding: 30px 20px;
+    margin-top: 40px;
+  }
+  
+  .footer a {
+    color: #7b4df7;
+    text-decoration: none;
+  }
+  

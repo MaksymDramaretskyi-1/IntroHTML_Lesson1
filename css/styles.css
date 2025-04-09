@@ -1,14 +1,17 @@
 /* External css: 
-
 Css selectar: body - element vi vil modifisere 
 css Declaration: {} - idenrifiserer hvor vi skriver koden for modigisering
 Css Rule:  backbraund - color: 'blue' - key  på  hva skal modfseres pog 'value' 
 til hvordan det skal modifiserest.
+*/
 
-/* Grunnleggende styling */
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Preahvihear&display=swap');
 
-
+@import url('./header/header.css');
+@import url('./banner/banner.css');
+@import url('./omMeg/omMeg.css');
+@import url('./prosjekter/prosjekter.css');
+@import url('./footer/footer.css');
 
 * {
   margin: 0;
@@ -16,228 +19,16 @@ til hvordan det skal modifiserest.
   box-sizing: border-box;
 }
 
-a {
-  text-decoration: none;
-  color: #5E3BEE;
-}
-
 body {
-  /* font-family: 'Inter', sans-serif; */
+  font-family: "Preahvihear", sans-serif;
   background-color: #f4f9fc;
   color: #222;
-  /* line-height: 1.6; */
-  font-family: "Preahvihear", sans-serif;
   font-weight: 400;
   font-style: normal;
 }
 
-/* Header */
-.navbar {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  background: white;
-  padding: 20px 85px;
-  box-shadow: 0 2px 5px rgba(0,0,0,0.05);
-  position: sticky;
-  top: 0;
-}
-
-.logo {
-  font-weight: 700;
-  font-size: 22px;
-}
-
-.nav-links a {
-  margin-left: 20px;
+ body a {
   text-decoration: none;
-  color: #333;
-  font-weight: 500;
-  font-size: 22px;
-}
-
-.nav-links a:hover {
   color: #5E3BEE;
 }
 
-.nav-links {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-
-
-.contact-button {
-  padding: 10px 20px;
-  border: 2px solid #5E3BEE; 
-  color: #5E3BEE; 
-  background-color: transparent;
-  border-radius: 8px;
-  font-size: 22px;
-  font-weight: 500;
-  cursor: pointer;
-  transition: 0.3s ease;
-  text-decoration: none;
-}
-
-.contact-button:hover {
-  color: white;
-  background-color: #5E3BEE;
-}
-
-/* Hero Section */
-.hero {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 50px 85px;
-  background-color: #ffffff;
-  text-align: center;
-  background-size:auto;
-}
-
-.hero-text {
-  display: flex;
-  flex-direction: column;
-  align-items: start;
-}
-
-.hero-text h2 {
-  font-size: 54px;
-  line-height: 120%;
-  text-align: justify;
-}
-
-.hero-text p {
-  display: flex;
-  text-align: justify;
-  width: 600px;
-  font-size: 18px;
-  line-height: 140%;
-  font-weight: 400;
-  margin-bottom: 12px;
-}
-
-.block-img-main-page {
-  display: flex;
-}
-
-.hero img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
-
-.hero h1 {
-  font-size: 18px;
-  font-weight: 600;
-  margin-bottom: 20px;
-}
-
-.highlight {
-  color: #5E3BEE;
-}
-
-.primary-btn {
-  display: inline-block;
-  margin-top: 20px;
-  background-color: #5E3BEE;
-  color: white;
-  padding: 12px 24px;
-  border-radius: 8px;
-  text-decoration: none;
-  font-weight: 600;
-}
-
-/* Seksjoner */
-.section {
-  padding: 60px 100px;
-}
-
-.section h2 {
-  font-size: 28px;
-  margin-bottom: 20px;
-}
-
-/* Prosjekter */
-.project-card {
-  background: white;
-  padding: 20px;
-  margin-bottom: 20px;
-  border-radius: 10px;
-  box-shadow: 0 1px 4px rgba(0,0,0,0.1);
-}
-
-/* Footer */
-.footer {
-  background: #2e2e2e;
-  color: white;
-  text-align: center;
-  padding: 30px 20px;
-  margin-top: 40px;
-}
-
-.footer a {
-  color: #7b4df7;
-  text-decoration: none;
-}
-
-/* Responsivitet */
-@media (max-width: 768px) {
-  .navbar {
-    flex-direction: column;
-    align-items: flex-start;
-  }
-
-  .hero h1 {
-    font-size: 28px;
-  }
-
-  .nav-links {
-    margin-top: 10px;
-  }
-}
-
-
-/* Burger */
-.burger {
-  display: none;
-  flex-direction: column;
-  cursor: pointer;
-}
-
-.burger span {
-  height: 3px;
-  width: 25px;
-  background: #333;
-  margin: 4px 0;
-  border-radius: 2px;
-  transition: 0.3s ease;
-}
-
-/* Мmobile menu () */
-@media (max-width: 768px) {
-  .burger {
-    display: flex;
-  }
-
-  .nav-links {
-    display: none;
-    flex-direction: column;
-    background: white;
-    position: absolute;
-    top: 70px;
-    right: 20px;
-    padding: 20px;
-    box-shadow: 0 0 10px rgba(0,0,0,0.1);
-    border-radius: 8px;
-  }
-
-  .nav-links a {
-    margin: 10px 0;
-  }
-
-  .nav-links.active {
-    display: flex;
-  }
-}
