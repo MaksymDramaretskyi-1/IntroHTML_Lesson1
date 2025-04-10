@@ -4,8 +4,9 @@
     <title>Hjem</title>
     <link rel="icon" type="image/x-icon" href="/images/html.webp">
     <meta charset="UTF-8"/>
+    <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/styles.css"/>
-    <script type="module" src="script.js"></script>
+    <script type="module" src="js/mainScript.js"></script>
   </head>
   <body>
       <!-- Header -->
@@ -15,9 +16,16 @@
       <span class="nav-span">
         <a href="#om-meg">Om meg</a>
         <a href="#prosjekter">Prosjekter</a>
+        <a class="contact-button-header" href="#kontakt">Kontakt</a>
       </span>
     </nav>
-    <a class="contact-button-header" href="#kontakt">Kontakt</a>
+    <button class="menu">
+      <svg viewBox="0 0 64 48">
+          <path d="M19,15 L45,15 C70,15 58,-2 49.0177126,7 L19,37"></path>
+          <path d="M19,24 L45,24 C61.2371586,24 57,49 41,33 L32,24"></path>
+          <path d="M45,33 L19,33 C-8,33 6,-2 22,14 L45,37"></path>
+      </svg>
+    </button>
   </header>
 
   <!-- Main content -->

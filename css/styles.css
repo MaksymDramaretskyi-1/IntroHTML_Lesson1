@@ -10,8 +10,11 @@ til hvordan det skal modifiserest.
 @import url('./header/header.css');
 @import url('./banner/banner.css');
 @import url('./omMeg/omMeg.css');
-@import url('./prosjekter/prosjekter.css');
+@import url('./project/project.css');
 @import url('./footer/footer.css');
+@import url('./header/burger.css');
+
+@import url('./magicCursor/magicCursor.css');
 
 * {
   margin: 0;
@@ -30,5 +33,22 @@ body {
  body a {
   text-decoration: none;
   color: #5E3BEE;
+}
+
+body.lock-scroll {
+  overflow: hidden;
+  padding-right: var(--scrollbar-width);
+}
+
+body, body * {
+  cursor: default;
+}
+
+a, button {
+  cursor: pointer;
+}
+
+:root {
+  --scrollbar-width: 0px;
 }
 

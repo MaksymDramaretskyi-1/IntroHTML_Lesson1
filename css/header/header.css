@@ -5,10 +5,11 @@
     justify-content: space-between;
     align-items: center;
     background: white;
-    padding: 20px 80px;
     box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+    padding: 1rem ;
     position: sticky;
-    /* top: 0; */
+    top: 0;
+    z-index: 1000;
   }
   
   .logo a {
@@ -22,18 +23,60 @@
   }
   
   .nav-links {
-    display: flex;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    background: white;
+    padding: 1rem 0;
+    /* display: none; */
+    flex-direction: column;
     align-items: center;
-    justify-content: space-between;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;
+    opacity: 0;
+    pointer-events: none;
+    transform: translateY(-10px);
+    transition: opacity 0.3s ease, transform 0.3s ease;
+
+
   }
   
+  .nav-links .nav-span {
+    flex-direction: column;
+    gap: 1.5rem;
+    display: flex;
+
+  }
+
+  .navbar.active .nav-links {
+  
+    opacity: 1;
+    pointer-events: auto;
+    transform: translateY(0);
+  }
+
   .nav-links a {
     margin-left: 20px;
     color: #333;
     font-weight: 500;
     font-size:18px;
   }
+
+  .nav-span {
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+  }
   
+  .nav-span a {
+    font-size: 1.2rem;
+    font-weight: 500;
+    color: #333;
+  }
+
   .nav-links a:hover {
     color: #5E3BEE;
   }
@@ -59,3 +102,7 @@
   .contact-button-header a:hover{
     color: white;
   }  
+
+  /* html {
+    scroll-behavior: smooth;
+  }   */
