@@ -16,7 +16,7 @@
       <span class="nav-span">
         <a href="#om-meg">Om meg</a>
         <a href="#prosjekter">Prosjekter</a>
-        <a class="contact-button-header" href="#kontakt">Kontakt</a>
+        <a href="#kontakt">Kontakt</a>
       </span>
     </nav>
     <button class="menu">
@@ -58,47 +58,92 @@
 
 
     <!-- Om meg -->
-    <section id="om-meg" class="om-meg">
-      <h2>Om meg</h2>
-      <p>
-          Jeg kom fra Ukraina for ett år siden.
-          Jeg er en frontend-utvikler som er lidenskapelig opptatt av design og brukervennlige løsninger. Jeg liker å jobbe med HTML, CSS, JavaScript, Figma og lignende verktøy.
-          Jeg startet min reise innen utvikling i 2022, rett etter at jeg hadde lært meg ferdigheter innen webdesign.
-
-          For tiden studerer jeg frontend-utvikling aktivt, og i nær fremtid planlegger jeg å lære TypeScript, Node.js og databaser.
-
-          I tillegg elsker jeg en aktiv livsstil – jeg liker å gå på turer i fjellet og dra på fisketurer med venner.
-          Jeg er også frivillig og hjelper til når det trengs. Jeg deltar på språkkafé i Frekhaug og andre arrangementer.
-
-          Jeg liker å bli kjent med nye mennesker og å hjelpe andre.
-          Ved siden av studiene jobber jeg med renhold på forskjellige steder, og jeg jobber også som matbud i Bergen.
-        </p>
+    <section id="om-meg" class="wrapper">
+      <div class="om-meg">
+        <h2>Om meg</h2>
+        <p>
+            Jeg kom fra Ukraina for ett år siden.
+            Jeg er en frontend-utvikler som er lidenskapelig opptatt av design og brukervennlige løsninger. Jeg liker å jobbe med HTML, CSS, JavaScript, Figma og lignende verktøy.
+            Jeg startet min reise innen utvikling i 2022, rett etter at jeg hadde lært meg ferdigheter innen webdesign.
+  
+            For tiden studerer jeg frontend-utvikling aktivt, og i nær fremtid planlegger jeg å lære TypeScript, Node.js og databaser.
+  
+            I tillegg elsker jeg en aktiv livsstil – jeg liker å gå på turer i fjellet og dra på fisketurer med venner.
+            Jeg er også frivillig og hjelper til når det trengs. Jeg deltar på språkkafé i Frekhaug og andre arrangementer.
+  
+            Jeg liker å bli kjent med nye mennesker og å hjelpe andre.
+            Ved siden av studiene jobber jeg med renhold på forskjellige steder, og jeg jobber også som matbud i Bergen.
+          </p>
+      </div>
     </section>
 
     <!-- Prosjekter -->
-    <section id="prosjekter" class="section">
-      <h2>Prosjekter</h2>
-      <article class="project-card">
-        <h3>Prosjekt 1</h3>
-        <p>Beskrivelse av prosjektet. Kommer snart!</p>
-      </article>
-      <article class="project-card">
-        <h3>Prosjekt 2</h3>
-        <p>Beskrivelse av prosjektet. Kommer snart!</p>
-      </article>
+    <section id="prosjekter" class="wrapper">
+      <div class="sectionProsjekter">
+        <h2>Prosjekter</h2>
+        <div class="containerProsjekter">
+          <article class="card">
+            <img src="https://images.unsplash.com/photo-1533658925625-2f94d23fc425?auto=format&fit=crop&w=800&q=60" alt="Project image" />
+            <h3>Card title</h3>
+            <p>Card description</p>
+          </article>
+
+          <article class="card">
+            <img src="https://images.unsplash.com/photo-1494122353634-c310f45a6d3c?auto=format&fit=crop&w=2850&q=80" alt="Project image" />
+            <h3>Card title</h3>
+            <p>Card description</p>
+          </article>
+
+          <article class="card">
+            <img src="https://images.unsplash.com/uploads/1413259835094dcdeb9d3/6e609595?auto=format&fit=crop&w=1952&q=80" alt="Project image" />
+            <h3>Card title</h3>
+            <p>Card description</p>
+          </article>
+
+          <article class="card">
+            <img src="https://images.unsplash.com/photo-1502957291543-d85480254bf8?auto=format&fit=crop&w=1567&q=80" alt="Project image" />
+            <h3>Card title</h3>
+            <p>Card description</p>
+          </article>
+
+          <article class="card">
+            <img src="https://images.unsplash.com/photo-1533756972958-d6f38a9761e3?auto=format&fit=crop&w=2089&q=80" alt="Project image" />
+            <h3>Card title</h3>
+            <p>Card description</p>
+          </article>
+
+          <article class="card">
+            <img src="https://images.unsplash.com/photo-1533806481099-93f1242aea1e?auto=format&fit=crop&w=1950&q=80" alt="Project image" />
+            <h3>Card title</h3>
+            <p>Card description</p>
+          </article>
+        </div>
+      </div>
     </section>
 
     <!-- Kontakt -->
-    <section id="kontakt" class="section">
-      <h2>Kontakt</h2>
-      <p>Ta gjerne kontakt via e-post: <a href="mailto:maksym.glodedata@gmail.com">maksym.glodedata@gmail.com</a></p>
+    <section id="kontakt" class="sectionKontakt">
+     <div class="wrapper">
+      <div>
+        <h2>Kontakt</h2>
+        <p>Ta gjerne kontakt via e-post:
+          <a href="mailto:maksym.glodedata@gmail.com">
+            maksym.glodedata@gmail.com
+          </a>
+        </p>
+      </div>
+     </div>
     </section>
   </main>
 
   <!-- Footer -->
   <footer class="footer">
     <p>© 2025 Maksym Dramaretskyi. Designet med kjærlighet 💜</p>
-    <p><a href="https://github.com/MaksymDramaretskyi-1" target="_blank">Min GitHub</a></p>
+    <p>
+      <a href="https://github.com/MaksymDramaretskyi-1" target="_blank">Min GitHub</a>
+      |
+      <a href="mailto:maksymdramaretskyi@gmail.com" >Email</a>
+    </p>
   </footer>
   </body>
 </html>

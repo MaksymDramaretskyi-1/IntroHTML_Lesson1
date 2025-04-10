@@ -6,7 +6,7 @@
     align-items: center;
     background: white;
     box-shadow: 0 2px 5px rgba(0,0,0,0.05);
-    padding: 1rem ;
+    padding: 20px 100px;
     position: sticky;
     top: 0;
     z-index: 1000;
@@ -27,32 +27,29 @@
     top: 100%;
     left: 0;
     right: 0;
-    background: white;
+    background: rgb(255, 255, 255);
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
     padding: 1rem 0;
     /* display: none; */
     flex-direction: column;
     align-items: center;
     display: flex;
     flex-direction: column;
-    align-items: center;
     gap: 1.5rem;
     opacity: 0;
     pointer-events: none;
     transform: translateY(-10px);
     transition: opacity 0.3s ease, transform 0.3s ease;
-
-
   }
   
   .nav-links .nav-span {
     flex-direction: column;
     gap: 1.5rem;
     display: flex;
-
+    align-items: center;
   }
 
   .navbar.active .nav-links {
-  
     opacity: 1;
     pointer-events: auto;
     transform: translateY(0);
@@ -72,19 +69,8 @@
   }
   
   .nav-span a {
-    font-size: 1.2rem;
-    font-weight: 500;
-    color: #333;
-  }
-
-  .nav-links a:hover {
-    color: #5E3BEE;
-  }
-  
-  .contact-button-header {
     padding: 6px 14px;
-    border: 2px solid #5E3BEE; 
-    color: #5E3BEE; 
+    /* color: #5E3BEE;  */
     background-color: transparent;
     border-radius: 8px;
     font-size: 18px;
@@ -92,13 +78,17 @@
     cursor: pointer;
     transition: 0.3s ease;
     text-decoration: none;
+    font-weight: 500;
+    color: #333;
   }
-  
-  .contact-button-header:hover {
+
+  .nav-links a:hover {
     background-color: #5E3BEE;
     color: #ffffff !important;
+
   }
   
+
   .contact-button-header a:hover{
     color: white;
   }  

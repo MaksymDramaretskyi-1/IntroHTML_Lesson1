@@ -1,8 +1,9 @@
 /* Seksjoner */
-.om-meg {
-    padding: 60px 100px;
+ .om-meg {
+    padding-top: 100px;
+    margin-bottom: 100px;
   }
-  
+
   .om-meg h2 {
     font-size: 28px;
     margin-bottom: 20px;

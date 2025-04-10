@@ -13,6 +13,7 @@ til hvordan det skal modifiserest.
 @import url('./project/project.css');
 @import url('./footer/footer.css');
 @import url('./header/burger.css');
+@import url('./kontakt/kontakt.css');
 
 @import url('./magicCursor/magicCursor.css');
 
@@ -51,4 +52,12 @@ a, button {
 :root {
   --scrollbar-width: 0px;
 }
+
+.wrapper {
+  max-width: 1600px;
+  margin: 0 auto;
+  padding: 0 100px;
+  width: 100%;
+}
+
 
