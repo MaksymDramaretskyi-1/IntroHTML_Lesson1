@@ -13,6 +13,8 @@ html, body {
   pointer-events: none;
 }
 
+
+
 .star {
   position: absolute;
   z-index: 2;

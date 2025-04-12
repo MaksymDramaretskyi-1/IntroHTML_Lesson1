@@ -1,4 +1,4 @@
-// cursor-effects.js (exportable version)
+// // cursor-effects.js (exportable version)
 
 const start = new Date().getTime();
 const originPosition = { x: 0, y: 0 };
@@ -21,6 +21,7 @@ const config = {
 };
 
 let count = 0;
+let animationActive = true;
 
 const rand = (min, max) => Math.floor(Math.random() * (max - min + 1)) + min;
 const selectRandom = items => items[rand(0, items.length - 1)];
@@ -36,6 +37,8 @@ const appendElement = el => document.body.appendChild(el);
 const removeElement = (el, delay) => setTimeout(() => document.body.removeChild(el), delay);
 
 const createStar = position => {
+  if (!animationActive) return;
+
   const star = document.createElement("span");
   const color = selectRandom(config.colors);
 
@@ -56,6 +59,8 @@ const createStar = position => {
 };
 
 const createGlowPoint = position => {
+  if (!animationActive) return;
+
   const glow = document.createElement("div");
   glow.className = "glow-point";
   glow.style.left = px(position.x);
@@ -97,22 +102,35 @@ const adjustLastMousePosition = position => {
   }
 };
 
+const isInsideElement = (element, x, y) => {
+  const rect = element.getBoundingClientRect();
+  return x >= rect.left && x <= rect.right && y >= rect.top && y <= rect.bottom;
+};
+
 const handleOnMove = e => {
   const scrollX = window.scrollX;
   const scrollY = window.scrollY;
-  
-  const mousePosition = { 
-    x: e.clientX + scrollX, 
-    y: e.clientY + scrollY 
+
+  const mousePosition = {
+    x: e.clientX + scrollX,
+    y: e.clientY + scrollY
   };
 
   adjustLastMousePosition(mousePosition);
 
-  const now = new Date().getTime(),
-        hasMovedFarEnough = calcDistance(last.starPosition, mousePosition) >= config.minimumDistanceBetweenStars,
-        hasBeenLongEnough = calcElapsedTime(last.starTimestamp, now) > config.minimumTimeBetweenStars;
-  
-  if (hasMovedFarEnough || hasBeenLongEnough) {
+  const now = new Date().getTime();
+  const hasMovedFarEnough = calcDistance(last.starPosition, mousePosition) >= config.minimumDistanceBetweenStars;
+  const hasBeenLongEnough = calcElapsedTime(last.starTimestamp, now) > config.minimumTimeBetweenStars;
+
+  // === Проверка: находится ли мышка над header или footer ===
+  const header = document.querySelector("header");
+  const footer = document.querySelector("footer");
+  const isOverHeader = header && isInsideElement(header, e.clientX, e.clientY);
+  const isOverFooter = footer && isInsideElement(footer, e.clientX, e.clientY);
+
+  animationActive = !(isOverHeader || isOverFooter);
+
+  if ((hasMovedFarEnough || hasBeenLongEnough) && animationActive) {
     createStar(mousePosition);
     updateLastStar(mousePosition);
   }
@@ -121,9 +139,10 @@ const handleOnMove = e => {
   updateLastMousePosition(mousePosition);
 };
 
-
 export function initCursorEffects() {
   window.addEventListener("mousemove", handleOnMove);
   window.addEventListener("touchmove", e => handleOnMove(e.touches[0]));
   document.body.addEventListener("mouseleave", () => updateLastMousePosition(originPosition));
 }
+
+
