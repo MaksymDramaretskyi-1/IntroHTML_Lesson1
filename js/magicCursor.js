@@ -1,7 +1,6 @@
 // cursor-effects.js (exportable version)
 
 const start = new Date().getTime();
-
 const originPosition = { x: 0, y: 0 };
 
 const last = {
@@ -40,7 +39,7 @@ const createStar = position => {
   const star = document.createElement("span");
   const color = selectRandom(config.colors);
 
-  star.className = "star fa-solid fa-sparkle";
+  star.className = "star fa-solid fa-star";
   star.style.left = px(position.x);
   star.style.top = px(position.y);
   star.style.fontSize = selectRandom(config.sizes);
