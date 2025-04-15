@@ -1,4 +1,3 @@
-
 /* Header */
 .navbar {
     display: flex;
@@ -87,12 +86,7 @@
     color: #ffffff !important;
 
   }
-  
 
   .contact-button-header a:hover{
     color: white;
   }  
-
-  /* html {
-    scroll-behavior: smooth;
-  }   */

@@ -1,0 +1,66 @@
+/* From Uiverse.io by tomaskriegelstein */ 
+button {
+  font-size: 18px;
+  color: black;
+  font-weight: 400;
+  cursor: pointer;
+  position: relative;
+  border: none;
+  background: none;
+
+  transition-timing-function: cubic-bezier(0.25, 0.8, 0.25, 1);
+  transition-duration: 400ms;
+  transition-property: color;
+  display: inline-flex;
+  align-items: center;
+}
+
+button:focus,
+button:hover {
+  color: #5E3BEE;
+}
+
+button:focus:after,
+button:hover:after {
+  width: 100%;
+  right: 100%;
+  left: auto; /* Ensure left is auto to override the initial value */
+}
+
+button:after {
+  content: "";
+  pointer-events: none;
+  bottom: -7px;
+  right: auto; /* Start from the right */
+  left: 0; /* Ensure left is auto to override the initial value */
+  position: absolute;
+  width: 0%;
+  height: 1px;
+  background-color: #fff;
+  transition-timing-function: cubic-bezier(0.25, 0.8, 0.25, 1);
+  transition-duration: 500ms;
+  transition-property: width, right;
+}
+
+.svg-icon {
+  width: 0.9em;
+  height: 0.8em;
+  margin-left: 10px;
+  fill: black;
+  transform: rotate(-45deg);
+  transition: transform 0.5s ease-out;
+}
+
+button:hover .svg-icon {
+  transform: rotate(0deg);
+  fill:  #5E3BEE;
+}
+
+.sectionDesign {
+  margin-bottom: 100px;
+}
+
+.sectionDesign h2 {
+  font-size: 28px;
+  margin-bottom: 20px;
+}

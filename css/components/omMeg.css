@@ -8,4 +8,11 @@
     font-size: 28px;
     margin-bottom: 20px;
   }
+
+  .om-meg p:first-child {
+    margin-bottom: 10px;
+  }
   
+  .blockOmMeg {
+    margin: 0px 32px;
+  }

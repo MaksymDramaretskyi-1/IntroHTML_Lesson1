@@ -7,32 +7,29 @@
     background-color: #ffffff;
     text-align: center;
     background-size:auto;
+    gap: 40px;
   }
   
-  .hero-text {
+  .heroBlockBanner {
     display: flex;
     flex-direction: column;
     align-items: start;
+    width: 50%;
   }
   
-  .hero-text h2 {
+  .heroBlockBanner h2 {
     font-size: 54px;
     line-height: 120%;
     text-align: justify;
   }
   
-  .hero-text p {
+  .heroBlockBanner p {
     display: flex;
     text-align: justify;
-    width: 600px;
     font-size: 18px;
     line-height: 140%;
     font-weight: 400;
     margin-bottom: 12px;
-  }
-  
-  .block-img-main-page {
-    display: flex;
   }
   
   .hero img {
@@ -47,11 +44,11 @@
     margin-bottom: 20px;
   }
   
-  .highlight {
+  .highLight {
     color: #5E3BEE;
   }
   
-  .banner-btn-main-page {
+  .bannerBtnMainPage {
     display: flex;
     margin-top: 20px;
     background-color: #5E3BEE;
@@ -63,8 +60,15 @@
     font-weight: 600;
   }
   
-  .banner-btn-main-page:hover {
+  .bannerBtnMainPage:hover {
     color: #5E3BEE;
     background-color: #ffffff;
     border:2px solid #5E3BEE ;
   }
+
+  .bannerImgMainPage {
+    max-width: 50%; /* или меньше, если нужно */
+    flex: 1;
+    overflow: hidden;
+  }
+  

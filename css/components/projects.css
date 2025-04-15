@@ -7,12 +7,8 @@
     box-shadow: 0 1px 4px rgba(0,0,0,0.1);
   }
 
-  .as {
-    background-color: white;
-  }
   .sectionProsjekter {
     margin-bottom: 100px;
-
   }
   
   .sectionProsjekter h2 {
@@ -26,9 +22,8 @@
     grid-gap: 2rem;
     margin: 2rem;
   }
-  
+
   /* demo purposes only */
-  
   .card {
     height: 215px;
     position: relative;
@@ -44,7 +39,6 @@
     color: white;
     font-size: 24px;
     margin: 20px 0 0 20px;
-  
   }
   
   .card p {
