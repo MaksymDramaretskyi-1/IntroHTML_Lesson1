@@ -1,14 +1,18 @@
+.sectionKompetanse {
+  margin-bottom: 100px;
+
+} 
+
 .blocksKompetanse {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
   gap: 2rem;
   max-width: 1200px;
-  margin: 0 auto;
+  margin-left: 30px;
 }
 
 .blocksKompetanse section {
   max-width: 400px;
-
 }
 
 .blocksKompetanse section h2 {
@@ -16,4 +20,194 @@
   margin-bottom: 14px;
 }
 
+.blocksKompetanse ul {
+  margin-left: 20px;
+}
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.sliders-container {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+/* Общие стили */
+.ms-container {
+  position: absolute;
+  overflow: hidden;
+}
+
+.ms-track {
+  display: flex;
+  position: absolute;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.ms-slide {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  user-select: none;
+}
+
+/* Изображения */
+.ms--images {
+  width: 100%;
+  height: 400px;
+  left: calc(50% - 280px);
+}
+
+.ms--images .ms-track {
+  top: 0;
+  left: -70px;
+}
+
+.ms--images .ms-slide {
+  width: 700px;
+  height: 400px;
+}
+
+.ms-slide__image-container {
+  width: 80%;
+  height: 80%;
+  background-color: rgba(0, 0, 0, 0.3);
+  overflow: hidden;
+}
+
+.ms-slide__image {
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+}
+
+/* Номера */
+.ms--numbers {
+  left: calc(50% - 400px);
+  top: calc(50% - 310px);
+  z-index: -1;
+  pointer-events: none;
+}
+
+.ms--numbers .ms-slide {
+  width: 240px;
+  height: 240px;
+  font-size: 9em;
+  font-weight: 900;
+  color: rgba(255, 255, 255, 0.2);
+}
+
+/* Заголовки */
+.ms--titles {
+  left: calc(50% - 420px);
+  top: calc(50% - 85px);
+  z-index: 1;
+  pointer-events: none;
+}
+
+.ms--titles .ms-track {
+  flex-direction: column-reverse;
+}
+
+.ms--titles .ms-slide {
+  width: 400px;
+  height: 170px;
+  font-size: 3.3em;
+  font-weight: 600;
+}
+
+.ms--titles h3 {
+  margin: 0;
+  text-shadow: 1px 1px 2px black;
+}
+
+/* Ссылки */
+.ms--links {
+  left: calc(50% - 420px);
+  top: calc(50% + 105px);
+  z-index: 1;
+}
+
+.ms--links .ms-track {
+  flex-direction: column;
+}
+
+.ms--links .ms-slide {
+  width: 120px;
+  height: 60px;
+}
+
+.ms-slide__link {
+  font-weight: 600;
+  border-bottom: 2px solid white;
+  cursor: pointer;
+}
+
+/* Пагинация */
+.pagination {
+  display: flex;
+  position: absolute;
+  left: calc(50% - 420px);
+  top: 100%;
+  transform: translateY(-100%);
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  z-index: 1;
+}
+
+.pagination__button {
+  display: inline-block;
+  position: relative;
+  width: 36px;
+  height: 20px;
+  margin: 0 5px;
+  cursor: pointer;
+}
+
+.pagination__button::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  width: 100%;
+  height: 2px;
+  background-color: #6A3836;
+  transform: translateY(-50%);
+}
+
+.pagination__button::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  width: 100%;
+  height: 3px;
+  background-color: #DC4540;
+  opacity: 0;
+  transform: translateY(-50%);
+  transition: 0.5s opacity;
+}
+
+.pagination__item--active .pagination__button::after {
+  opacity: 1;
+}

@@ -4,6 +4,11 @@ import { setupSmoothScrollWithOffset } from './smoothScroll.js';
 import { initCursorEffects } from './magicCursor.js';
 
 
+
+
+
+
+
 initCursorEffects();
 setupSmoothScrollWithOffset(80); // или 100, если хедер выше
 
@@ -13,6 +18,7 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 
 setupBurgerMenu(); // вызываем!
+
 
 
 
